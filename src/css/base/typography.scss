@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet');
+@import "../utils/variables.scss";
+@import "../utils/mixins.scss";
+
+body{
+    background-color: $background-color;
+    font-family: $font-family;
+    color: $text-color;
+    
+    a{
+        text-decoration: $linkDecoration;
+    }
+    margin: 0 auto;
+}
+
+.cta-button {
+    @include signInButton();
+    &:hover{
+        @include changeButton();
+    }
+}
+

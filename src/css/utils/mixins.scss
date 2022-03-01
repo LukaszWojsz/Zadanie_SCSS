@@ -1,0 +1,36 @@
+@mixin signInButton(){
+    border: 2px solid white;
+    border-radius: 50px;
+    background-color: #d469a5;
+    color: white;
+    font-weight: 700;
+    padding: 5px 20px;
+}
+
+@mixin changeButton(){
+    background-color: $buttonChange;
+}
+
+@mixin navBar(){
+        margin-top: 6em;
+        background-color: rgba(256,256,256,0.5);
+        height: 3.75em;
+        padding: 0px 40px;
+        text-align: center;
+        li {
+            display: inline-block;
+            padding: 5px 30px;
+            font-weight: 400;
+            font-size: 1.2em;
+            margin: 10px;
+            
+        }
+        a{
+            &:hover{
+            text-decoration: underline;}
+        }
+}
+
+
+
+
